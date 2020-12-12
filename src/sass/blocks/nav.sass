@@ -1,0 +1,27 @@
+.nav
+    box-shadow: 0 0 5px #000
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__list
+        display: flex
+    &__link
+        position: relative
+        margin: 15px
+        font-size: 24px
+        a
+            color: #000
+        &:hover
+            a
+                color: blue
+            &::after
+                content: ''
+                position: absolute
+                right: 0
+                bottom: -10px
+                display: block
+                width: 90%
+                height: 2px
+                background-color: blue
+                margin: 5px 0 0
