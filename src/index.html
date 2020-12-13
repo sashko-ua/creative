@@ -23,7 +23,7 @@
             <div class="container">
                 <div class="nav__inner">
                     <div class="logo">
-                        <a href="   ">Keto</a>
+                        <a href="index.html">Keto</a>
                     </div>
 
                     <ul class="nav__list">
@@ -37,6 +37,12 @@
                             <a href="#order">Заказать</a>
                         </li>
                     </ul>
+
+                    <div class="nav__hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -44,39 +50,23 @@
         <div class="container">
             <div class="header__body">
                 <h1 class="title header__title">Keto-dieta</h1>
-                <h3 class="subtitle header__subtitle">твой помощник на пути к здоровому телу</h3>
+                <h3 class="subtitle header__subtitle">Скажи нет диетам и голоданию</h3>
 
-                <div class="header__img">
-                    <img src="img/keto_img.png" alt="keto_img">
-                </div>
 
                 <a href="#order">
                     <button class="btn header__btn">Заказать</button>
                 </a>
+
+                <div class="header__img">
+                    <img src="img/keto_img.png" alt="keto_img">
+                </div>
             </div>
         </div>
     </header>
 
     <section class="about" id="about">
         <div class="container">
-            <h2 class="title">Как это работает?</h2>
-
-            <div class="about__descr">
-                <p class="about__paragraph">
-                    Лишний вес сегодня является массовым явлением во всем мире. От него страдают 1,5 млрд. человек всего
-                    мира и эта цифра неуклонно увеличивается. У полных людей гораздо быстрее формируются проблемы со
-                    здоровьем - повреждается сердце, разрушаются суставы, скачет давление и сахар в крови. Наиболее
-                    частой причиной избыточного веса является пониженный метаболизм. Избыточные калории не расходуются
-                    организмом и превращаются в жировые отложения. Также факторами появления избыточного веса являются:
-                    переедание, плохое питание, сидячий образ жизни, возраст, недостаток витаминов и болезни эндокринной
-                    системы.
-                </p>
-                <p class="about__paragraph">
-                    Борьба с избыточным весом превращается в бег по кругу. Стоит только убрать несколько килограмм, как
-                    они снова возвращаются. Но не стоит расстраиваться, специалистам удалось изобрести продукт, который
-                    помогает решить проблему лишнего веса навсегда - это капсулы для похудения Кето-ДИЕТА.
-                </p>
-            </div>
+            <h2 class="title">Как работает Keto Guru для похудения?</h2>
 
             <div class="about__result">
                 <div class="about__week">
@@ -106,9 +96,9 @@
                     <img class="about__week-img" src="img/about/3_week.png" alt="3_week">
 
                     <ul class="about__week-list">
-                        <li class="about__week-item">Перестройка организма на активное жиросжигание</li>
-                        <li class="about__week-item">К концу недели автоматичкски уходит 1-2 кг</li>
-                        <li class="about__week-item">Снижениє аппетита и чувства голода</li>
+                        <li class="about__week-item">Активное жиросжигание во всех участках тела</li>
+                        <li class="about__week-item">Заметные результаты каждый день</li>
+                        <li class="about__week-item">Уходит жир с проблемных мест</li>
                     </ul>
                 </div>
 
@@ -117,9 +107,9 @@
                     <img class="about__week-img" src="img/about/4_week.png" alt="4_week">
 
                     <ul class="about__week-list">
-                        <li class="about__week-item">Перестройка организма на активное жиросжигание</li>
-                        <li class="about__week-item">К концу недели автоматичкски уходит 1-2 кг</li>
-                        <li class="about__week-item">Снижениє аппетита и чувства голода</li>
+                        <li class="about__week-item">Заметная стройность</li>
+                        <li class="about__week-item">Очерчивание талии и похудение в лице</li>
+                        <li class="about__week-item">Вырабатываются здоровые пищевые привычки</li>
                     </ul>
                 </div>
             </div>
@@ -180,8 +170,24 @@
     <section class="order" id="order">
         <div class="container">
             <div class="order__inner">
-                <div class="timer">
-                    <div class="title  order__title">Осталось до конца акции:</div>
+                <h2 class="title order__title">Заказать сейчас</h2>
+
+
+                <form action="#" class="form order__form">
+                    <p class="order__p">
+                        Успей заказать со скидкой <br> <span>50%</span>
+                    </p>
+
+                    <input class="form__input" required placeholder="Ваше имя" name="name" type="text">
+                    <input class="form__input form__phone" required placeholder="Ваш номер телефона" name="phone"
+                        type="tel">
+                    <button class="btn form__btn">Заказать</button>
+                </form>
+
+                <h2 class="title  order__title">Осталось до конца акции:</h2>
+
+                <div class="timer order__timer">
+
                     <div class="timer__body">
                         <div class="timer__block">
                             <span class="timer__days timer__time"></span>
@@ -201,15 +207,6 @@
                         </div>
                     </div>
                 </div>
-
-                <form action="#" class="form">
-                    <div class="title order__title">Заказать сейчас</div>
-
-                    <input class="form__input" required placeholder="Ваше имя" name="name" type="text">
-                    <input class="form__input form__phone" required placeholder="Ваш номер телефона" name="phone"
-                        type="tel">
-                    <button class="btn form__btn">Заказать</button>
-                </form>
             </div>
         </div>
 
