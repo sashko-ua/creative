@@ -92,3 +92,25 @@ const maskOptions = {
     mask: '+{38}(000)000-00-00'
 };
 const mask = IMask(element, maskOptions);
+
+// ----------HAMBURGER----------
+const hamburder = document.querySelector('.nav__hamburger'),
+    nav = document.querySelector('.nav__list'),
+    navLink = document.querySelector('.nav__link'),
+    close = document.querySelector('.nav__close');
+
+hamburder.addEventListener('click', () => {
+    nav.classList.add('nav__list--active');
+});
+
+function closeMenu() {
+    nav.classList.remove('nav__list--active');
+}
+
+close.addEventListener('click', () => {
+    closeMenu();
+});
+
+navLink.addEventListener('click', () => {
+    closeMenu();
+});

@@ -86,7 +86,8 @@
             width: auto
 
     .about
-        padding: 40px 0
+        &__inner
+            padding: 40px 0
 
 @media ( max-width: 767px )
     .container
@@ -96,7 +97,34 @@
         &__inner
             justify-content: space-around
         &__list
-            display: none
+            position: fixed
+            right: -100%
+            top: 0
+            background-color: $menu-color
+            width: 50%
+            height: 100vh
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            z-index: 10
+            box-shadow: 0 0 15px #000
+            transition: all .5s ease
+            &--active
+                right: 0
+        &__link
+            text-transform: uppercase
+            font-size: 28px
+            font-weight: bold
+            padding: 15px 0
+        &__close
+            display: block
+            position: absolute
+            top: 15px
+            right: 15px
+            z-index: 11
+            font-size: 28px
+
         &__hamburger
             display: block
             height: 15px
@@ -131,12 +159,67 @@
 @media ( max-width: 575px )
     .container
         width: 100%
-        padding: 0 20px
-
     .header
         background-position: -600px center
         height: 550px
+        &__subtitle
+            width: 325px
+        &__img
 
+            left: 50%
+            transform: translatex(-50%)
     .subtitle
-        width: unset
         font-size: 27px
+
+    .about__inner
+        padding: 40px 20px
+
+    .order
+        &__inner
+            padding: 40px 20px
+
+    .timer__block
+        width: 100px
+        height: 100px
+
+    .about__result
+        padding: 0px 0px 0 35px
+
+    .footer__inner
+        height: 80px
+        padding: 0 20px
+        flex-direction: column
+
+@media ( max-width: 415px )
+    .order__form
+        width: 240px
+
+    .title
+        font-size: 20px
+
+    .header__btn
+        margin: 55px auto 0
+
+    .btn
+        font-size: 20px
+
+    .timer
+        &__time
+            font-size: 36px
+        &__text
+            display: none
+
+    .footer__inner
+        text-align: center
+
+@media ( max-width: 325px )
+    .order__form
+        width: 200px
+
+    .form__input
+        font-size: 16px
+        width: 100%
+
+    .timer__block
+        width: 56px
+        height: 65px
