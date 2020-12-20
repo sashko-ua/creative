@@ -553,7 +553,7 @@ html {
     position: fixed;
     right: -100%;
     top: 0;
-    background-color: rgba(75, 142, 204, 0.9);
+    background-color: rgba(75, 142, 204, 0.95);
     width: 50%;
     height: 100vh;
     display: -webkit-box;
@@ -666,6 +666,10 @@ html {
     font-size: 27px;
   }
 
+  .nav__list {
+    width: 60%;
+  }
+
   .about__inner {
     padding: 40px 20px;
   }
@@ -694,6 +698,10 @@ html {
 }
 
 @media (max-width: 415px) {
+  .nav__list {
+    width: 100%;
+  }
+
   .order__form {
     width: 240px;
   }
