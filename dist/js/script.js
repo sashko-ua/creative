@@ -96,7 +96,7 @@ const mask = IMask(element, maskOptions);
 // ----------HAMBURGER----------
 const hamburder = document.querySelector('.nav__hamburger'),
     nav = document.querySelector('.nav__list'),
-    navLink = document.querySelector('.nav__link'),
+    navLinks = [...document.querySelectorAll('.nav__link')],
     close = document.querySelector('.nav__close');
 
 hamburder.addEventListener('click', () => {
@@ -111,6 +111,8 @@ close.addEventListener('click', () => {
     closeMenu();
 });
 
-navLink.addEventListener('click', () => {
-    closeMenu();
-});
+navLinks.forEach(e => {
+    e.addEventListener('click', () => {
+        closeMenu();
+    });
+})
